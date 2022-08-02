@@ -1,0 +1,259 @@
+{
+    "aliasName": "afcaves_nkl_goodluck",
+    "count": 1,
+    "head": [
+        {
+            "aliasName": "afcaves_nkl_goodluck",
+            "secondaryAliasName": null,
+            "chainAliasName": null,
+            "subtitle": "SUBTITLE_AFCAVES_NKL_GOODLUCK23",
+            "mixerGroup": null,
+            "soundfile": {
+                "type": 2,
+                "totalMsec": 4568,
+                "isLocalized": true,
+                "isStreamed": true,
+                "fileIndex": 0,
+                "raw": {
+                    "dir": "voiceovers/afcaves",
+                    "name": "afcaves_nkl_2_3_r"
+                }
+            },
+            "flags": 2097562,
+            "sequence": 0,
+            "volMin": 0.8936999797821045,
+            "volMax": 0.8936999797821045,
+            "volModIndex": 40,
+            "pitchMin": 1.0,
+            "pitchMax": 1.0,
+            "distMin": 120.0,
+            "distMax": 600.0,
+            "velocityMin": 0.0,
+            "masterPriority": 100,
+            "masterPercentage": 0.20000000298023224,
+            "slavePercentage": 1.0,
+            "probability": 1.0,
+            "startDelay": 0,
+            "sndContext": null,
+            "sndCurve": "$default",
+            "lpfCurve": "$default",
+            "hpfCurve": "$defaultHpf",
+            "reverbSendCurve": "$default",
+            "speakerMap": {
+                "name": "radio",
+                "isDefault": false,
+                "channelMaps": [
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "speaker": 0,
+                                "numLevels": 1,
+                                "levels0": 1.0,
+                                "levels1": 0.0
+                            },
+                            {
+                                "speaker": 1,
+                                "numLevels": 1,
+                                "levels0": 1.0,
+                                "levels1": 0.0
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "speaker": 0,
+                                "numLevels": 1,
+                                "levels0": 0.0,
+                                "levels1": 0.0
+                            },
+                            {
+                                "speaker": 1,
+                                "numLevels": 1,
+                                "levels0": 0.0,
+                                "levels1": 0.0
+                            },
+                            {
+                                "speaker": 2,
+                                "numLevels": 1,
+                                "levels0": 1.0,
+                                "levels1": 0.0
+                            },
+                            {
+                                "speaker": 3,
+                                "numLevels": 1,
+                                "levels0": 0.0,
+                                "levels1": 0.0
+                            },
+                            {
+                                "speaker": 4,
+                                "numLevels": 1,
+                                "levels0": 0.0,
+                                "levels1": 0.0
+                            },
+                            {
+                                "speaker": 5,
+                                "numLevels": 1,
+                                "levels0": 0.0,
+                                "levels1": 0.0
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "speaker": 0,
+                                "numLevels": 2,
+                                "levels0": 1.0,
+                                "levels1": 0.0
+                            },
+                            {
+                                "speaker": 1,
+                                "numLevels": 2,
+                                "levels0": 0.0,
+                                "levels1": 1.0
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "speaker": 0,
+                                "numLevels": 2,
+                                "levels0": 0.0,
+                                "levels1": 0.0
+                            },
+                            {
+                                "speaker": 1,
+                                "numLevels": 2,
+                                "levels0": 0.0,
+                                "levels1": 0.0
+                            },
+                            {
+                                "speaker": 2,
+                                "numLevels": 2,
+                                "levels0": 0.5,
+                                "levels1": 0.5
+                            },
+                            {
+                                "speaker": 3,
+                                "numLevels": 2,
+                                "levels0": 0.0,
+                                "levels1": 0.0
+                            },
+                            {
+                                "speaker": 4,
+                                "numLevels": 2,
+                                "levels0": 0.0,
+                                "levels1": 0.0
+                            },
+                            {
+                                "speaker": 5,
+                                "numLevels": 2,
+                                "levels0": 0.0,
+                                "levels1": 0.0
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown": {
+                "pad": [
+                    [
+                        1,
+                        0,
+                        174,
+                        0,
+                        0,
+                        0,
+                        24,
+                        18
+                    ],
+                    [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        128,
+                        63,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "u4": 0,
+                "u5": 0,
+                "u18": 100,
+                "u20": 4,
+                "u34": 0.0010000000474974513
+            }
+        }
+    ],
+    "unknownArray": []
+}

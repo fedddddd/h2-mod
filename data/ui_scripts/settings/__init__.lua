@@ -65,7 +65,7 @@ LUI.MenuBuilder.m_types_build["settings_menu"] = function(a1)
 
     LUI.Options.CreateOptionButton(
         menu, 
-        "cg_drawFps", 
+        "cg_drawFPS", 
         "@LUA_MENU_DRAW_FPS", 
         "@LUA_MENU_DRAW_FPS_DESC", 
         {
@@ -142,6 +142,44 @@ LUI.MenuBuilder.m_types_build["settings_menu"] = function(a1)
                 text = "@LUA_MENU_MODE3",
                 value = 3
             }
+        }
+    )
+
+    createdivider(menu, "@LUA_MENU_AUDIO_OPTIONS")
+
+    LUI.Options.CreateOptionButton(
+        menu, 
+        "snd_musicDisabledForCustomSoundtrack", 
+        "@LUA_MENU_MUSIC", 
+        "@LUA_MENU_MUSIC_DESC", 
+        {
+            {
+                text = "@LUA_MENU_DISABLED",
+                value = true
+            },
+            {
+                text = "@LUA_MENU_ENABLED",
+                value = false
+            },
+        }
+    )
+
+    createdivider(menu, "@MENU_GAME_BEGINNING")
+
+    LUI.Options.CreateOptionButton(
+        menu, 
+        "intro", 
+        "@LUA_MENU_INTRO", 
+        "@LUA_MENU_INTRO_DESC", 
+        {
+            {
+                text = "@LUA_MENU_DISABLED",
+                value = false
+            },
+            {
+                text = "@LUA_MENU_ENABLED",
+                value = true
+            },
         }
     )
 

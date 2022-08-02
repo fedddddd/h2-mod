@@ -13,6 +13,7 @@ namespace patches
 	{
 		utils::hook::detour gscr_set_save_dvar_hook;
 		utils::hook::detour dvar_register_float_hook;
+		utils::hook::detour dvar_register_bool_hook;
 
 		void* sub_46148()
 		{
@@ -29,7 +30,7 @@ namespace patches
 		void gscr_set_save_dvar_stub()
 		{
 			const auto string = utils::string::to_lower(utils::hook::invoke<const char*>(0x1405C7C20, 0));
-			if (string == "cg_fov" || string == "cg_fovscale")
+			if (string == "cg_fov" || string == "cg_fovscale" || string == "snd_musicdisabledforcustomsoundtrack")
 			{
 				return;
 			}
@@ -56,6 +57,20 @@ namespace patches
 			}
 
 			return dvar_register_float_hook.invoke<game::dvar_t*>(hash, dvarName, value, min, max, flags);
+		}
+
+		game::dvar_t* snd_musicDisabledForCustomSoundtrack = nullptr;
+
+		game::dvar_t* dvar_register_bool_stub(int hash, const char* name, bool value, unsigned int flags)
+		{
+			static const auto snd_musicdisabledforcustomsoundtrack_hash = game::generateHashValue("snd_musicdisabledforcustomsoundtrack");
+
+			if (hash == snd_musicdisabledforcustomsoundtrack_hash)
+			{
+				return snd_musicDisabledForCustomSoundtrack;
+			}
+
+			return dvar_register_bool_hook.invoke<game::dvar_t*>(hash, name, value, flags);
 		}
 	}
 
@@ -91,7 +106,13 @@ namespace patches
 			cg_fovScale = dvars::register_float("cg_fovScale", 1.f, 0.1f, 2.f, 
 				game::DVAR_FLAG_SAVED, "Scale applied to the field of view");
 
+			// Make snd_musicDisabledForCustomSoundtrack saved dvar
+
+			snd_musicDisabledForCustomSoundtrack = dvars::register_bool("snd_musicDisabledForCustomSoundtrack", 0, 
+				game::DVAR_FLAG_SAVED, "Disable all in-game music");
+
 			dvar_register_float_hook.create(game::Dvar_RegisterFloat.get(), dvar_register_float_stub);
+			dvar_register_bool_hook.create(game::Dvar_RegisterBool.get(), dvar_register_bool_stub);
 		}
 	};
 }
